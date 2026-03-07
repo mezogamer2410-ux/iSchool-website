@@ -1,0 +1,181 @@
+
+.main{
+width:100%;
+display:flex;
+align-items:center;
+min-height: 100vh;
+background-image:url(back-image.png);
+background-size:cover;
+background-position:center;
+background-attachment: fixed;
+}
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.linear-bg {
+  /* Default (top to bottom) blue to pink gradient */
+  background: linear-gradient(blue, pink);
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+h2{
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.content{
+   display:flex;
+   justify-content:center;
+}
+.card{
+   background-color: #74afe7da;
+   width: 21.25em;
+   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.25);
+   border-radius: 10px;
+   margin:20px;
+   padding:25px;
+   transition: 0.7s ease;
+}
+.card:hover{
+   transform:scale(1.1);
+}
+.card .icon{
+   font-size: 5em;
+   color: rgb(0, 0, 131);
+
+}
+
+
+header{
+    display: flex;
+    /* This makes the header use Flexbox.
+       Flexbox helps us arrange items in a row or column easily. */
+
+    box-sizing: border-box;
+    /* This makes padding and border included inside the width.
+       So the width does NOT grow bigger than expected. */
+
+    width: 100%;
+    /* The header takes the full width of the screen. */
+
+    background-color: #00c3ff;
+    /* This sets a light gray background color. */
+
+    justify-content: space-between;
+    /* This pushes items apart.
+       One item goes to the left, the other to the right. */
+
+    position: fixed;
+    /* This makes the header stay at the top,
+       even when you scroll down. */
+
+    padding: 10px 200px;
+    /* Top & bottom padding = 10px
+       Left & right padding = 200px */
+
+    z-index: 999;
+    /* This makes sure the header stays above other elements.
+       Higher number = appears on top. */
+}
+
+.logo{
+    text-decoration: none;
+    /* Removes the underline from the link. */
+
+    font-size: 1.8em;
+    /* Makes the text bigger.
+       1.8em means 1.8 times the normal size. */
+
+    font-weight: 700;
+    /* Makes the text bold. */
+
+    color: blue;
+    /* Changes text color to blue. */
+
+    text-transform: uppercase;
+    /* Makes all letters CAPITAL. */
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+                 'Lucida Grande', 'Lucida Sans Unicode', 
+                 Geneva, Verdana, sans-serif;
+    /* Sets the font style.
+       If the first font is not available,
+       the browser tries the next one. */
+}
+
+
+nav a {
+    text-decoration: none;
+    /* Removes underline from navigation links. */
+
+    font-size: 1.2em;
+    /* Makes text slightly bigger than normal. */
+
+    font-weight: 400;
+    /* Normal font thickness. */
+
+    color: blue;  
+    /* Makes the links blue. */
+
+    margin-left: 30px;
+    /* Adds space to the left of each link.
+       This separates them from each other. */
+}
+
+
+
+nav a:hover{
+    color: rgb(84, 17, 147);
+    /* When you move your mouse over the link,
+       the color changes to purple. */
+}
+
+
+.main{
+    display: flex;
+    /* Makes the main section use Flexbox. */
+
+    height: 100vh;/* ❌ This has a mistake.
+            It should be 100vh (not hv).
+            vh means "viewport height" (screen height). */
+
+    align-items: center;
+    /* This centers items vertically inside the section. */
+
+    padding: 100px 200px;
+    /* Adds space inside the section.
+       Top & bottom = 100px
+       Left & right = 200px */
+}
+
+
+@media (max-width: 750px) {
+    body{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        font-size: 10px;
+    }
+}
